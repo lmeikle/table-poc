@@ -1,0 +1,42 @@
+thead, tbody {
+    display: block;
+    overflow: auto;
+}
+
+table, tr, th, td {
+    border: 1px solid red;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+thead, th {
+    position: sticky;
+    top: 0;
+    background: yellow;
+    z-index: 1;
+}
+
+td, th {
+    padding: 2px 2px;
+}
+
+.resize-container {
+    table-layout: fixed;
+    display: table;
+    width: 100%;
+}
+
+.resize-value {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: calc(100% - 5px);
+}
+
+.resize-handle {
+    outline: solid 4px black;
+    cursor: col-resize;
+}
